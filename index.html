@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ViensChezMoi</title>
+<meta name="description" content="Tu es invité·e ! Réponds en un clic et dis ce que tu apportes.">
+<meta property="og:title" content="ViensChezMoi · Tu es invité·e !">
+<meta property="og:description" content="Réponds en un clic et dis ce que tu apportes à la fête.">
+<meta name="theme-color" content="#160f1f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23160f1f'/%3E%3Cpath d='M18 46 30 16l16 22z' fill='%23ff4f9a'/%3E%3Ccircle cx='46' cy='18' r='5' fill='%23ffc94d'/%3E%3Ccircle cx='16' cy='20' r='3' fill='%235fe3b4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600;700&display=swap">
+<style>
+*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-tap-highlight-color:transparent}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-size:1em;font-variation-settings:normal}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-feature-settings:inherit;font-size:100%;font-variation-settings:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0}.inset-x-0{left:0;right:0}.bottom-0{bottom:0}.left-1\/2{left:50%}.left-4{left:1rem}.top-0{top:0}.top-4{top:1rem}.z-20{z-index:20}.z-30{z-index:30}.z-40{z-index:40}.-mx-1{margin-left:-.25rem;margin-right:-.25rem}.mx-auto{margin-right:auto}.ml-auto,.mx-auto{margin-left:auto}.mt-1{margin-top:.25rem}.mt-2{margin-top:.5rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-11{height:2.75rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-2\.5{height:.625rem}.h-40{height:10rem}.h-44{height:11rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-64{height:16rem}.h-8{height:2rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-14{width:3.5rem}.w-20{width:5rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-8{width:2rem}.w-full{width:100%}.min-w-0{min-width:0}.max-w-\[440px\]{max-width:440px}.max-w-xs{max-width:20rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%}.-translate-x-1\/2,.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.select-all{-webkit-user-select:all;-moz-user-select:all;user-select:all}.resize-none{resize:none}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-cols-\[auto_1fr\]{grid-template-columns:auto 1fr}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-2\.5{gap:.625rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-x-4{-moz-column-gap:1rem;column-gap:1rem}.gap-y-3{row-gap:.75rem}.-space-x-2>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-left:calc(-.5rem*(1 - var(--tw-space-x-reverse)));margin-right:calc(-.5rem*var(--tw-space-x-reverse))}.divide-y>:not([hidden])~:not([hidden]){--tw-divide-y-reverse:0;border-bottom-width:calc(1px*var(--tw-divide-y-reverse));border-top-width:calc(1px*(1 - var(--tw-divide-y-reverse)))}.divide-trait>:not([hidden])~:not([hidden]){border-color:var(--trait)}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.whitespace-pre-line{white-space:pre-line}.text-wrap{text-wrap:wrap}.break-words{overflow-wrap:break-word}.break-all{word-break:break-all}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-\[1\.5px\]{border-width:1.5px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-current{border-color:currentColor}.border-menthe{border-color:var(--menthe)}.border-soleil{border-color:var(--soleil)}.border-trait{border-color:var(--trait)}.border-transparent{border-color:transparent}.border-t-transparent{border-top-color:transparent}.bg-\[\#25d366\]{--tw-bg-opacity:1;background-color:rgb(37 211 102/var(--tw-bg-opacity,1))}.bg-black\/35{background-color:rgba(0,0,0,.35)}.bg-carte{background-color:var(--carte)}.bg-fuchsia{background-color:var(--fuchsia)}.bg-lait{background-color:var(--lait)}.bg-menthe{background-color:var(--menthe)}.bg-nuit{background-color:var(--nuit)}.bg-soleil{background-color:var(--soleil)}.bg-velours{background-color:var(--velours)}.bg-gradient-to-t{background-image:linear-gradient(to top,var(--tw-gradient-stops))}.from-black\/50{--tw-gradient-from:rgba(0,0,0,.5) var(--tw-gradient-from-position);--tw-gradient-to:transparent var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-black\/70{--tw-gradient-from:rgba(0,0,0,.7) var(--tw-gradient-from-position);--tw-gradient-to:transparent var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.via-black\/30{--tw-gradient-to:transparent var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),rgba(0,0,0,.3) var(--tw-gradient-via-position),var(--tw-gradient-to)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.p-4{padding:1rem}.p-5{padding:1.25rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-2\.5{padding-left:.625rem;padding-right:.625rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1{padding-bottom:.25rem;padding-top:.25rem}.py-1\.5{padding-bottom:.375rem;padding-top:.375rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.py-2\.5{padding-bottom:.625rem;padding-top:.625rem}.py-3{padding-bottom:.75rem;padding-top:.75rem}.py-3\.5{padding-bottom:.875rem;padding-top:.875rem}.py-5{padding-bottom:1.25rem;padding-top:1.25rem}.pb-1{padding-bottom:.25rem}.pb-6{padding-bottom:1.5rem}.pb-8{padding-bottom:2rem}.pt-16{padding-top:4rem}.pt-2{padding-top:.5rem}.pt-20{padding-top:5rem}.pt-24{padding-top:6rem}.pt-3{padding-top:.75rem}.pt-4{padding-top:1rem}.text-left{text-align:left}.text-center{text-align:center}.font-body{font-family:DM Sans,ui-sans-serif,system-ui,sans-serif}.font-display{font-family:Bricolage Grotesque,ui-sans-serif,system-ui,sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-5xl{font-size:3rem;line-height:1}.text-\[10px\]{font-size:10px}.text-\[15px\]{font-size:15px}.text-\[30px\]{font-size:30px}.text-\[32px\]{font-size:32px}.text-\[34px\]{font-size:34px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-\[1\.02\]{line-height:1.02}.leading-\[1\.05\]{line-height:1.05}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-.025em}.text-brume{color:var(--brume)}.text-fuchsia{color:var(--fuchsia)}.text-lait{color:var(--lait)}.text-menthe{color:var(--menthe)}.text-nuit{color:var(--nuit)}.text-soleil{color:var(--soleil)}.text-white\/85{color:hsla(0,0%,100%,.85)}.underline{text-decoration-line:underline}.line-through{text-decoration-line:line-through}.underline-offset-4{text-underline-offset:4px}.opacity-60{opacity:.6}.opacity-70{opacity:.7}.shadow-\[0_10px_30px_-10px_var\(--fuchsia\)\]{--tw-shadow:0 10px 30px -10px var(--fuchsia);--tw-shadow-colored:0 10px 30px -10px var(--tw-shadow-color)}.shadow-\[0_10px_30px_-10px_var\(--fuchsia\)\],.shadow-lg{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.outline{outline-style:solid}.ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color)}.ring-1,.ring-2{box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.ring-2{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color)}.ring-\[3px\]{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.ring-nuit{--tw-ring-color:var(--nuit)}.ring-soleil{--tw-ring-color:var(--soleil)}.ring-trait{--tw-ring-color:var(--trait)}.drop-shadow{--tw-drop-shadow:drop-shadow(0 1px 2px rgba(0,0,0,.1)) drop-shadow(0 1px 1px rgba(0,0,0,.06))}.drop-shadow,.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-500{transition-duration:.5s}.active\:scale-\[\.98\]:active{--tw-scale-x:.98;--tw-scale-y:.98}.active\:scale-\[\.98\]:active,.active\:scale-\[\.99\]:active{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.active\:scale-\[\.99\]:active{--tw-scale-x:.99;--tw-scale-y:.99}.disabled\:opacity-30:disabled{opacity:.3}.disabled\:opacity-40:disabled{opacity:.4}
+
+  :root { color-scheme: dark; --nuit:#160f1f; --velours:#221830; --carte:#2d2140; --trait:#3f3156; --lait:#f7f0fa;
+          --brume:#b4a5c4; --fuchsia:#ff4f9a; --soleil:#ffc94d; --menthe:#5fe3b4; }
+  html, body { margin: 0; min-height: 100%; }
+  body { background: var(--nuit); color: var(--lait); font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+         -webkit-tap-highlight-color: transparent; padding-top: env(safe-area-inset-top, 0px); }
+  .gutter { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  h1, h2 { text-wrap: balance; }
+  .eyebrow { letter-spacing: .12em; text-transform: uppercase; font-size: 11px; font-weight: 700; }
+  .field { background: var(--carte); border: 1.5px solid var(--trait); border-radius: 14px; padding: 12px 14px; width: 100%;
+           color: var(--lait); font-size: 16px; outline: none; font-family: inherit; }
+  .field:focus { border-color: var(--fuchsia); }
+  .field::placeholder { color: #7f7095; }
+  :focus-visible { outline: 2px solid var(--soleil); outline-offset: 2px; }
+  .tab-bar { padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px)); }
+  @keyframes pop { 0% { transform: scale(.92) } 60% { transform: scale(1.04) } 100% { transform: scale(1) } }
+  .pop { animation: pop .35s ease-out; }
+  @keyframes spin { to { transform: rotate(360deg) } }
+  .spin { animation: spin .8s linear infinite; }
+  @media (prefers-reduced-motion: reduce) { .pop, .spin { animation: none; } }
+  .tnum { font-variant-numeric: tabular-nums; }
+  #chargement { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+                font-family: "Bricolage Grotesque", sans-serif; font-weight: 800; font-size: 24px; color: var(--lait); }
+  #chargement b { color: var(--fuchsia); }
+</style>
+</head>
+<body>
+<div id="chargement">Viens<b>Chez</b>Moi</div>
+<div id="root"></div>
+<canvas id="confetti" style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50"></canvas>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+
+<script>
+"use strict";
+const { useState, useEffect, useCallback, useRef } = React;
+/* ================= Connexion à la base ================= */
+const SUPABASE_URL = 'https://netvudihctzqxdgotwkh.supabase.co';
+const SUPABASE_CLE = 'sb_publishable_zQuqHVPuzvaF0SufDIiVQA_3gNOFnm_';
+const db = supabase.createClient(SUPABASE_URL, SUPABASE_CLE, { auth: { persistSession: false } });
+/* ================= Petits outils ================= */
+const stock = {
+    lire(k) { try {
+        return JSON.parse(localStorage.getItem('vcm_' + k));
+    }
+    catch (e) {
+        return null;
+    } },
+    ecrire(k, v) { try {
+        localStorage.setItem('vcm_' + k, JSON.stringify(v));
+    }
+    catch (e) { } },
+};
+const nouvelId = () => (crypto.randomUUID ? crypto.randomUUID() :
+    'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => { const r = Math.random() * 16 | 0; return (c === 'x' ? r : (r & 3 | 8)).toString(16); }));
+const lienFete = (slug) => `${location.origin}${location.pathname}#/f/${slug}`;
+const lienAdmin = (slug, cle) => `${location.origin}${location.pathname}#/f/${slug}/orga/${cle}`;
+function samediProchain() {
+    const d = new Date();
+    d.setDate(d.getDate() + ((6 - d.getDay() + 7) % 7 || 7));
+    const z = (n) => String(n).padStart(2, '0');
+    return `${d.getFullYear()}-${z(d.getMonth() + 1)}-${z(d.getDate())}`;
+}
+function formatDate(date) {
+    if (!date)
+        return 'Date à définir';
+    const d = new Date(date + 'T12:00');
+    const j = d.toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' });
+    return j.charAt(0).toUpperCase() + j.slice(1);
+}
+const formatHeure = (h) => h ? h.slice(0, 5).replace(':', 'h') : '20h';
+const COULEURS = ['#ff4f9a', '#ffc94d', '#5fe3b4', '#8f7bff', '#ff8a3d', '#4fc3ff'];
+const couleurDe = (nom) => COULEURS[[...nom].reduce((a, c) => a + c.charCodeAt(0), 0) % COULEURS.length];
+async function copier(texte) {
+    try {
+        await navigator.clipboard.writeText(texte);
+        return true;
+    }
+    catch (e) {
+        const t = document.createElement('textarea');
+        t.value = texte;
+        document.body.appendChild(t);
+        t.select();
+        let ok = false;
+        try {
+            ok = document.execCommand('copy');
+        }
+        catch (_) { }
+        t.remove();
+        return ok;
+    }
+}
+/* Réduit une photo avant l'envoi (max 1600 px, ~300 Ko) */
+function reduirePhoto(fichier) {
+    return new Promise((ok, ko) => {
+        const img = new Image();
+        const url = URL.createObjectURL(fichier);
+        img.onload = () => {
+            const max = 1600, r = Math.min(1, max / Math.max(img.width, img.height));
+            const c = document.createElement('canvas');
+            c.width = Math.round(img.width * r);
+            c.height = Math.round(img.height * r);
+            c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+            URL.revokeObjectURL(url);
+            c.toBlob(b => b ? ok(b) : ko(new Error('Image illisible')), 'image/jpeg', 0.82);
+        };
+        img.onerror = () => ko(new Error('Image illisible'));
+        img.src = url;
+    });
+}
+/* ================= Confettis ================= */
+const sansAnimation = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function lancerConfettis(n = 140) {
+    if (sansAnimation)
+        return;
+    const c = document.getElementById('confetti'), ctx = c.getContext('2d'), dpr = window.devicePixelRatio || 1;
+    c.width = innerWidth * dpr;
+    c.height = innerHeight * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const p = Array.from({ length: n }, () => ({
+        x: innerWidth / 2 + (Math.random() - .5) * 80, y: innerHeight * .35, vx: (Math.random() - .5) * 11, vy: -Math.random() * 12 - 4,
+        w: 6 + Math.random() * 6, h: 8 + Math.random() * 8, a: Math.random() * 6, va: (Math.random() - .5) * .3,
+        col: ['#ff4f9a', '#ffc94d', '#5fe3b4', '#8f7bff', '#f7f0fa'][Math.floor(Math.random() * 5)], rond: Math.random() < .3
+    }));
+    let t = 0;
+    (function f() {
+        ctx.clearRect(0, 0, innerWidth, innerHeight);
+        p.forEach(q => {
+            q.vy += .28;
+            q.vx *= .99;
+            q.x += q.vx;
+            q.y += q.vy;
+            q.a += q.va;
+            ctx.save();
+            ctx.translate(q.x, q.y);
+            ctx.rotate(q.a);
+            ctx.fillStyle = q.col;
+            if (q.rond) {
+                ctx.beginPath();
+                ctx.arc(0, 0, q.w / 2, 0, 7);
+                ctx.fill();
+            }
+            else
+                ctx.fillRect(-q.w / 2, -q.h / 2, q.w, q.h * Math.abs(Math.cos(q.a * 2)));
+            ctx.restore();
+        });
+        if (++t < 200)
+            requestAnimationFrame(f);
+        else
+            ctx.clearRect(0, 0, innerWidth, innerHeight);
+    })();
+}
+/* ================= Couvertures ================= */
+const COUVERTURES = [
+    { id: 'disco', nom: 'Disco', fond: 'radial-gradient(circle at 30% 20%, #ff7ab8 0%, #c2185b 40%, #3a0b3f 100%)', motif: 'disco' },
+    { id: 'apero', nom: 'Apéro', fond: 'linear-gradient(160deg, #ffd36e 0%, #ff8a3d 55%, #b83b5e 100%)', motif: 'bulles' },
+    { id: 'nuit', nom: 'Nuit étoilée', fond: 'linear-gradient(180deg, #2b1f6b 0%, #120c33 100%)', motif: 'etoiles' },
+    { id: 'jardin', nom: 'Jardin', fond: 'linear-gradient(150deg, #7af0c4 0%, #2a9d8f 50%, #1d3b4a 100%)', motif: 'bulles' },
+    { id: 'anniv', nom: 'Anniversaire', fond: 'conic-gradient(from 200deg at 70% 30%, #ff4f9a, #ffc94d, #8f7bff, #ff4f9a)', motif: 'serpentins' },
+];
+function Motif({ type }) {
+    const svg = (children) => React.createElement("svg", { viewBox: "0 0 200 120", className: "absolute inset-0 w-full h-full", preserveAspectRatio: "xMidYMid slice", "aria-hidden": "true" }, children);
+    if (type === 'disco')
+        return svg(React.createElement(React.Fragment, null,
+            React.createElement("circle", { cx: "150", cy: "40", r: "26", fill: "#ffffff22", stroke: "#ffffff55" }),
+            [...Array(6)].map((_, i) => React.createElement("line", { key: i, x1: 124 + i * 9, y1: "18", x2: 124 + i * 9, y2: "62", stroke: "#ffffff33" })),
+            [...Array(4)].map((_, i) => React.createElement("line", { key: 'h' + i, x1: "124", y1: 24 + i * 11, x2: "176", y2: 24 + i * 11, stroke: "#ffffff33" })),
+            React.createElement("line", { x1: "150", y1: "0", x2: "150", y2: "14", stroke: "#ffffff66" }),
+            React.createElement("circle", { cx: "40", cy: "90", r: "3", fill: "#ffc94d" }),
+            React.createElement("circle", { cx: "70", cy: "30", r: "2", fill: "#fff" }),
+            React.createElement("circle", { cx: "100", cy: "100", r: "2.5", fill: "#fff" })));
+    if (type === 'etoiles')
+        return svg(React.createElement(React.Fragment, null,
+            [[20, 20], [60, 50], [110, 15], [150, 60], [180, 25], [35, 95], [90, 85], [170, 100], [130, 40]].map(([x, y], i) => React.createElement("path", { key: i, d: `M${x} ${y - 4} L${x + 1.2} ${y - 1.2} L${x + 4} ${y} L${x + 1.2} ${y + 1.2} L${x} ${y + 4} L${x - 1.2} ${y + 1.2} L${x - 4} ${y} L${x - 1.2} ${y - 1.2}Z`, fill: i % 3 ? '#ffffffcc' : '#ffc94d' })),
+            React.createElement("circle", { cx: "160", cy: "30", r: "14", fill: "#fff4cc" }),
+            React.createElement("circle", { cx: "166", cy: "26", r: "13", fill: "#2b1f6b" })));
+    if (type === 'serpentins')
+        return svg(React.createElement(React.Fragment, null,
+            React.createElement("path", { d: "M-5 30 C 30 0, 50 60, 90 30 S 150 0, 210 40", stroke: "#ffffff88", strokeWidth: "4", fill: "none", strokeLinecap: "round" }),
+            React.createElement("path", { d: "M-5 95 C 40 70, 70 120, 120 90 S 180 70, 210 100", stroke: "#16101f55", strokeWidth: "4", fill: "none", strokeLinecap: "round" })));
+    return svg([[30, 90, 10], [55, 60, 6], [150, 30, 14], [175, 80, 8], [110, 100, 5], [90, 20, 7]].map(([x, y, r], i) => React.createElement("circle", { key: i, cx: x, cy: y, r: r, fill: "#ffffff2a", stroke: "#ffffff66" })));
+}
+function Couverture({ couverture, photo, hauteur = 'h-44', children }) {
+    const c = COUVERTURES.find(x => x.id === couverture) || COUVERTURES[0];
+    return (React.createElement("div", { className: `relative overflow-hidden rounded-3xl ${hauteur}`, style: { background: photo ? `center/cover no-repeat url("${photo}")` : c.fond } },
+        !photo && React.createElement(Motif, { type: c.motif }),
+        children));
+}
+const CATEGORIES = [
+    { id: 'boissons', nom: 'Boissons', icone: '🥤' }, { id: 'nourriture', nom: 'Nourriture', icone: '🍕' },
+    { id: 'glacons', nom: 'Glaçons', icone: '🧊' }, { id: 'autre', nom: 'Autre', icone: '🎈' },
+];
+function Avatar({ nom, taille = 'w-10 h-10 text-sm', gris = false, anneau = true }) {
+    return React.createElement("div", { className: `${taille} rounded-full flex items-center justify-center font-display font-extrabold text-nuit shrink-0 ${anneau ? 'ring-2 ring-nuit' : ''}`, style: { background: gris ? '#7f7095' : couleurDe(nom) } }, nom.trim().charAt(0).toUpperCase());
+}
+function Rond() { return React.createElement("span", { className: "inline-block w-5 h-5 rounded-full border-2 border-current border-t-transparent spin", "aria-hidden": "true" }); }
+function Bouton({ enCours, children, className = '', ...p }) {
+    return React.createElement("button", { ...p, disabled: p.disabled || enCours, className: `flex items-center justify-center gap-2 active:scale-[.98] transition disabled:opacity-40 ${className}` }, enCours ? React.createElement(Rond, null) : children);
+}
+function Toast({ texte }) {
+    if (!texte)
+        return null;
+    return React.createElement("div", { role: "status", className: "fixed left-1/2 -translate-x-1/2 z-40 bg-lait text-nuit font-semibold px-4 py-2.5 rounded-full shadow-lg text-sm pop", style: { bottom: 'calc(92px + env(safe-area-inset-bottom, 0px))' } }, texte);
+}
+/* ================= Formulaire (créer ou modifier) ================= */
+function FormulaireFete({ initial, titre, sousTitre, libelle, onValider }) {
+    const [f, setF] = useState(initial);
+    const [fichier, setFichier] = useState(null);
+    const [apercu, setApercu] = useState(initial.photo_url || null);
+    const [enCours, setEnCours] = useState(false);
+    const [erreur, setErreur] = useState('');
+    const maj = (k) => (e) => setF({ ...f, [k]: e.target.value });
+    const pret = f.nom.trim() && f.date_fete && f.lieu.trim();
+    const choisirPhoto = (e) => {
+        const x = e.target.files && e.target.files[0];
+        if (!x)
+            return;
+        setFichier(x);
+        setApercu(URL.createObjectURL(x));
+    };
+    const valider = async (e) => {
+        e.preventDefault();
+        if (!pret)
+            return;
+        setEnCours(true);
+        setErreur('');
+        try {
+            let photo_url = apercu && !fichier ? f.photo_url : null;
+            if (fichier) {
+                const blob = await reduirePhoto(fichier);
+                const chemin = `${nouvelId()}.jpg`;
+                const { error } = await db.storage.from('couvertures').upload(chemin, blob, { contentType: 'image/jpeg' });
+                if (error)
+                    throw new Error("La photo n'a pas pu être envoyée. Réessaie ou choisis une couverture.");
+                photo_url = db.storage.from('couvertures').getPublicUrl(chemin).data.publicUrl;
+            }
+            await onValider({ ...f, photo_url });
+        }
+        catch (err) {
+            setErreur(err.message || 'Une erreur est survenue. Vérifie ta connexion et réessaie.');
+        }
+        setEnCours(false);
+    };
+    return (React.createElement("div", { className: "flex flex-col gap-6 pb-6" },
+        React.createElement("header", { className: "flex flex-col gap-1 pt-4" },
+            React.createElement("span", { className: "eyebrow text-fuchsia" }, sousTitre),
+            React.createElement("h1", { className: "font-display font-extrabold text-[32px] leading-[1.05]" }, titre)),
+        React.createElement(Couverture, { couverture: f.couverture, photo: apercu, hauteur: "h-40" },
+            React.createElement("div", { className: "absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/50 to-transparent" },
+                React.createElement("p", { className: "font-display font-extrabold text-2xl leading-tight drop-shadow" }, f.nom || 'Nom de ta fête'))),
+        React.createElement("section", { className: "flex flex-col gap-3" },
+            React.createElement("span", { className: "eyebrow text-brume" }, "Image de couverture"),
+            React.createElement("div", { className: "flex gap-2 overflow-x-auto pb-1 -mx-1 px-1" },
+                COUVERTURES.map(c => {
+                    const actif = !apercu && f.couverture === c.id;
+                    return (React.createElement("button", { key: c.id, id: 'cv-' + c.id, type: "button", "aria-pressed": actif, className: "shrink-0 w-20 flex flex-col gap-1.5 items-center", onClick: () => { setF({ ...f, couverture: c.id, photo_url: null }); setFichier(null); setApercu(null); } },
+                        React.createElement("span", { className: `block w-20 h-14 rounded-xl relative overflow-hidden ${actif ? 'ring-[3px] ring-soleil' : 'ring-1 ring-trait'}`, style: { background: c.fond } },
+                            React.createElement(Motif, { type: c.motif })),
+                        React.createElement("span", { className: `text-xs ${actif ? 'text-lait font-semibold' : 'text-brume'}` }, c.nom)));
+                }),
+                React.createElement("div", { className: "shrink-0 w-20 flex flex-col gap-1.5 items-center" },
+                    React.createElement("span", { className: `relative w-20 h-14 rounded-xl border-2 border-dashed flex items-center justify-center text-2xl overflow-hidden ${apercu ? 'border-soleil' : 'border-trait text-brume'}`, style: apercu ? { background: `center/cover url("${apercu}")` } : {} },
+                        apercu ? '' : '+',
+                        React.createElement("input", { id: "photo", type: "file", accept: "image/*", "aria-label": "Choisir ma photo de couverture", onChange: choisirPhoto, style: { position: 'absolute', inset: 0, width: '100%', height: '100%', opacity: 0, cursor: 'pointer', fontSize: '200px' } })),
+                    React.createElement("span", { className: `text-xs ${apercu ? 'text-lait font-semibold' : 'text-brume'}` }, "Ma photo")))),
+        React.createElement("form", { className: "flex flex-col gap-4", onSubmit: valider },
+            React.createElement("label", { className: "flex flex-col gap-1.5" },
+                React.createElement("span", { className: "eyebrow text-brume" }, "Nom de la f\u00EAte"),
+                React.createElement("input", { id: "nom", className: "field font-semibold", value: f.nom, onChange: maj('nom'), placeholder: "Cr\u00E9maill\u00E8re, anniv, ap\u00E9ro\u2026", maxLength: 60 })),
+            React.createElement("div", { className: "grid grid-cols-2 gap-3" },
+                React.createElement("label", { className: "flex flex-col gap-1.5 min-w-0" },
+                    React.createElement("span", { className: "eyebrow text-brume" }, "Date"),
+                    React.createElement("input", { id: "date", type: "date", className: "field", value: f.date_fete, onChange: maj('date_fete') })),
+                React.createElement("label", { className: "flex flex-col gap-1.5 min-w-0" },
+                    React.createElement("span", { className: "eyebrow text-brume" }, "Heure"),
+                    React.createElement("input", { id: "heure", type: "time", className: "field", value: f.heure, onChange: maj('heure') }))),
+            React.createElement("label", { className: "flex flex-col gap-1.5" },
+                React.createElement("span", { className: "eyebrow text-brume" }, "Lieu"),
+                React.createElement("input", { id: "lieu", className: "field", value: f.lieu, onChange: maj('lieu'), placeholder: "Adresse ou nom du lieu", maxLength: 120 })),
+            React.createElement("label", { className: "flex flex-col gap-1.5" },
+                React.createElement("span", { className: "eyebrow text-brume" }, "Organis\u00E9 par"),
+                React.createElement("input", { id: "hote", className: "field", value: f.hote, onChange: maj('hote'), placeholder: "Ton pr\u00E9nom", maxLength: 30 })),
+            React.createElement("label", { className: "flex flex-col gap-1.5" },
+                React.createElement("span", { className: "eyebrow text-brume" }, "Un mot pour les invit\u00E9s"),
+                React.createElement("textarea", { id: "message", rows: "3", className: "field resize-none", value: f.message, onChange: maj('message'), placeholder: "Dress code, code de la porte, ambiance\u2026", maxLength: 400 })),
+            erreur && React.createElement("p", { className: "text-sm text-soleil" }, erreur),
+            React.createElement(Bouton, { type: "submit", disabled: !pret, enCours: enCours, className: "mt-2 h-14 rounded-2xl bg-fuchsia text-nuit font-display font-extrabold text-lg" }, libelle),
+            !pret && React.createElement("p", { className: "text-sm text-brume text-center" }, "Ajoute un nom, une date et un lieu pour continuer."))));
+}
+/* ================= Écran Créer ================= */
+function EcranCreer({ aller }) {
+    const mesFetes = stock.lire('mes_fetes') || [];
+    const creer = async (f) => {
+        const { data, error } = await db.rpc('creer_fete', {
+            p_nom: f.nom, p_date: f.date_fete, p_heure: f.heure || '20:00', p_lieu: f.lieu, p_hote: f.hote,
+            p_message: f.message, p_couverture: f.couverture, p_photo_url: f.photo_url
+        });
+        if (error || !data || !data[0])
+            throw new Error("La fête n'a pas pu être créée. Vérifie ta connexion et réessaie.");
+        const { slug, cle } = data[0];
+        stock.ecrire('orga_' + slug, cle);
+        stock.ecrire('mes_fetes', [{ slug, nom: f.nom, date: f.date_fete }, ...mesFetes].slice(0, 20));
+        stock.ecrire('nouvelle_' + slug, true);
+        aller(`#/f/${slug}`);
+    };
+    return (React.createElement(React.Fragment, null,
+        React.createElement(FormulaireFete, { titre: "On fait la f\u00EAte quand\u00A0?", sousTitre: "Nouvelle f\u00EAte", libelle: "Cr\u00E9er l'invitation", initial: { nom: '', date_fete: samediProchain(), heure: '20:30', lieu: '', hote: '', message: '', couverture: 'disco', photo_url: null }, onValider: creer }),
+        mesFetes.length > 0 && (React.createElement("section", { className: "flex flex-col gap-2 pb-8" },
+            React.createElement("h2", { className: "font-display font-extrabold text-xl" }, "Mes f\u00EAtes"),
+            React.createElement("ul", { className: "flex flex-col divide-y divide-trait bg-velours rounded-2xl" }, mesFetes.map(m => (React.createElement("li", { key: m.slug },
+                React.createElement("a", { href: `#/f/${m.slug}`, className: "flex items-center justify-between gap-3 px-4 py-3" },
+                    React.createElement("span", { className: "font-medium min-w-0 truncate" }, m.nom),
+                    React.createElement("span", { className: "text-sm text-brume shrink-0" }, formatDate(m.date).split(' ').slice(0, 3).join(' ')))))))))));
+}
+/* ================= Chargement des données d'une fête ================= */
+function useFete(slug) {
+    const [etat, setEtat] = useState({ chargement: true, fete: null, reponses: [], articles: [], erreur: null });
+    const charger = useCallback(async () => {
+        const [f, r, a] = await Promise.all([
+            db.rpc('voir_fete', { p_slug: slug }),
+            db.rpc('liste_reponses', { p_slug: slug }),
+            db.rpc('liste_articles', { p_slug: slug }),
+        ]);
+        if (f.error || r.error || a.error) {
+            setEtat(e => ({ ...e, chargement: false, erreur: e.fete ? null : 'reseau' }));
+            return;
+        }
+        const fete = f.data && f.data[0];
+        if (!fete) {
+            setEtat({ chargement: false, fete: null, reponses: [], articles: [], erreur: 'introuvable' });
+            return;
+        }
+        setEtat({ chargement: false, fete, reponses: r.data || [], articles: a.data || [], erreur: null });
+    }, [slug]);
+    useEffect(() => {
+        charger();
+        const t = setInterval(() => { if (!document.hidden)
+            charger(); }, 8000);
+        return () => clearInterval(t);
+    }, [charger]);
+    return [etat, charger];
+}
+/* ================= Panneau organisateur ================= */
+function PanneauOrga({ fete, cle, nouvelle, aller, toast }) {
+    const lien = lienFete(fete.slug);
+    const texte = `${fete.nom} 🎉 ${formatDate(fete.date_fete)} à ${formatHeure(fete.heure)}. Dis-moi si tu viens : ${lien}`;
+    const partager = async () => {
+        if (navigator.share) {
+            try {
+                await navigator.share({ title: fete.nom, text: texte });
+                return;
+            }
+            catch (e) {
+                if (e.name === 'AbortError')
+                    return;
+            }
+        }
+        toast((await copier(texte)) ? 'Invitation copiée, colle-la dans tes messages' : 'Copie impossible, sélectionne le lien à la main');
+    };
+    return (React.createElement("section", { className: `rounded-3xl p-5 flex flex-col gap-4 border-[1.5px] ${nouvelle ? 'border-soleil bg-soleil/10' : 'border-trait bg-velours'}` },
+        React.createElement("div", { className: "flex flex-col gap-1" },
+            React.createElement("span", { className: "eyebrow text-soleil" }, "Tu organises"),
+            React.createElement("h2", { className: "font-display font-extrabold text-xl" }, nouvelle ? 'Ta fête est en ligne ! Invite tes amis' : 'Invite tes amis')),
+        React.createElement("div", { className: "grid grid-cols-2 gap-2" },
+            React.createElement("a", { href: `https://wa.me/?text=${encodeURIComponent(texte)}`, target: "_blank", rel: "noopener", className: "h-12 rounded-2xl bg-[#25d366] text-nuit font-bold flex items-center justify-center active:scale-[.98]" }, "WhatsApp"),
+            React.createElement(Bouton, { onClick: partager, className: "h-12 rounded-2xl bg-lait text-nuit font-bold" }, "Partager")),
+        React.createElement("p", { className: "text-sm text-brume break-all select-all bg-carte rounded-xl px-3 py-2" }, lien),
+        React.createElement("details", { className: "text-sm" },
+            React.createElement("summary", { className: "text-brume cursor-pointer font-semibold" }, "G\u00E9rer ma f\u00EAte"),
+            React.createElement("div", { className: "flex flex-col gap-3 pt-3" },
+                React.createElement("button", { onClick: () => aller(`#/f/${fete.slug}/modifier`), className: "h-11 rounded-xl border-[1.5px] border-trait font-semibold" }, "Modifier les infos"),
+                React.createElement("p", { className: "text-brume" }, "Garde ce lien secret pour g\u00E9rer ta f\u00EAte depuis un autre t\u00E9l\u00E9phone. Ne le donne pas aux invit\u00E9s."),
+                React.createElement(Bouton, { onClick: async () => toast((await copier(lienAdmin(fete.slug, cle))) ? 'Lien organisateur copié' : 'Copie impossible'), className: "h-11 rounded-xl bg-carte font-semibold" }, "Copier mon lien organisateur")))));
+}
+/* ================= Écran Invitation ================= */
+function EcranInvitation({ slug, etat, recharger, aller, toast }) {
+    const { fete, reponses } = etat;
+    const cle = stock.lire('orga_' + slug);
+    const [nouvelle] = useState(() => { const n = stock.lire('nouvelle_' + slug); if (n)
+        stock.ecrire('nouvelle_' + slug, false); return !!n; });
+    const [moi, setMoi] = useState(() => stock.lire('moi_' + slug));
+    const [prenom, setPrenom] = useState(moi ? moi.prenom : '');
+    const [enCours, setEnCours] = useState('');
+    const [erreur, setErreur] = useState('');
+    const confettiFaits = useRef(false);
+    useEffect(() => { if (fete && !confettiFaits.current) {
+        confettiFaits.current = true;
+        setTimeout(() => lancerConfettis(110), 250);
+    } }, [fete]);
+    const repondre = async (statut, nom = prenom) => {
+        if (!nom.trim()) {
+            setErreur("Écris ton prénom pour que l'organisateur sache qui vient.");
+            return;
+        }
+        setErreur('');
+        setEnCours(statut);
+        const jeton = (moi && moi.jeton) || nouvelId();
+        const { data, error } = await db.rpc('repondre', { p_slug: slug, p_prenom: nom.trim(), p_statut: statut, p_jeton: jeton });
+        setEnCours('');
+        if (error) {
+            setErreur("Ta réponse n'est pas passée. Vérifie ta connexion et réessaie.");
+            return;
+        }
+        const m = { prenom: nom.trim(), statut, jeton, reponse_id: data };
+        stock.ecrire('moi_' + slug, m);
+        setMoi(m);
+        recharger();
+        if (statut === 'oui')
+            lancerConfettis(180);
+    };
+    const viennent = reponses.filter(r => r.statut === 'oui');
+    const absents = reponses.filter(r => r.statut === 'non');
+    const d = new Date(fete.date_fete + 'T12:00');
+    return (React.createElement("div", { className: "flex flex-col gap-6 pb-6 pt-4" },
+        cle && React.createElement(PanneauOrga, { fete: fete, cle: cle, nouvelle: nouvelle, aller: aller, toast: toast }),
+        React.createElement(Couverture, { couverture: fete.couverture, photo: fete.photo_url, hauteur: "h-64" },
+            React.createElement("div", { className: "absolute top-4 left-4" },
+                React.createElement("span", { className: "eyebrow bg-black/35 backdrop-blur px-3 py-1.5 rounded-full" }, "Tu es invit\u00E9\u00B7e")),
+            React.createElement("div", { className: "absolute inset-x-0 bottom-0 p-5 pt-16 bg-gradient-to-t from-black/70 via-black/30 to-transparent" },
+                React.createElement("h1", { className: "font-display font-extrabold text-[34px] leading-[1.02] drop-shadow break-words" }, fete.nom),
+                fete.hote && React.createElement("p", { className: "mt-1 text-sm text-white/85" },
+                    "Organis\u00E9 par ",
+                    React.createElement("b", null, fete.hote)))),
+        React.createElement("div", { className: "bg-velours rounded-2xl grid grid-cols-[auto_1fr] gap-x-4 gap-y-3 p-5" },
+            React.createElement("div", { className: "w-11 h-11 rounded-xl bg-carte flex flex-col items-center justify-center leading-none" },
+                React.createElement("span", { className: "text-[10px] uppercase font-bold text-fuchsia" }, d.toLocaleDateString('fr-FR', { month: 'short' }).replace('.', '')),
+                React.createElement("span", { className: "font-display font-extrabold text-lg tnum" }, d.getDate())),
+            React.createElement("div", { className: "min-w-0 flex flex-col justify-center" },
+                React.createElement("p", { className: "font-semibold" }, formatDate(fete.date_fete)),
+                React.createElement("p", { className: "text-sm text-brume tnum" },
+                    "\u00C0 partir de ",
+                    formatHeure(fete.heure))),
+            React.createElement("div", { className: "w-11 h-11 rounded-xl bg-carte flex items-center justify-center text-xl", "aria-hidden": "true" }, "\uD83D\uDCCD"),
+            React.createElement("div", { className: "min-w-0 flex flex-col justify-center" },
+                React.createElement("p", { className: "font-semibold break-words" }, fete.lieu),
+                React.createElement("a", { className: "text-sm text-fuchsia font-semibold", target: "_blank", rel: "noopener", href: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(fete.lieu)}` }, "Ouvrir dans Maps"))),
+        fete.message && React.createElement("p", { className: "text-[15px] leading-relaxed text-lait/90 px-1 whitespace-pre-line" },
+            "\u00AB ",
+            fete.message,
+            " \u00BB"),
+        React.createElement("section", { className: "bg-velours rounded-3xl p-5 flex flex-col gap-4" }, moi ? (React.createElement("div", { className: "pop flex flex-col gap-3 items-center text-center" },
+            React.createElement(Avatar, { nom: moi.prenom, gris: moi.statut !== 'oui', taille: "w-14 h-14 text-xl", anneau: false }),
+            React.createElement("p", { className: "font-display font-extrabold text-xl" }, moi.statut === 'oui' ? `Génial ${moi.prenom}, on t'attend !` : `Dommage ${moi.prenom}, une prochaine fois.`),
+            moi.statut === 'oui' && React.createElement("button", { onClick: () => aller(`#/f/${slug}/logistique`), className: "w-full h-12 rounded-2xl bg-soleil text-nuit font-bold active:scale-[.98]" }, "Choisir ce que j'apporte"),
+            erreur && React.createElement("p", { className: "text-sm text-soleil" }, erreur),
+            React.createElement(Bouton, { enCours: !!enCours, onClick: () => repondre(moi.statut === 'oui' ? 'non' : 'oui', moi.prenom), className: "text-sm text-brume underline underline-offset-4 h-8" }, moi.statut === 'oui' ? 'Finalement je ne peux pas' : 'Finalement je viens'))) : (React.createElement(React.Fragment, null,
+            React.createElement("h2", { className: "font-display font-extrabold text-2xl" }, "Alors, tu viens\u00A0?"),
+            React.createElement("label", { className: "flex flex-col gap-1.5" },
+                React.createElement("span", { className: "eyebrow text-brume" }, "Ton pr\u00E9nom"),
+                React.createElement("input", { id: "prenom", className: "field", value: prenom, onChange: e => setPrenom(e.target.value), placeholder: "Ex. Camille", maxLength: 24, autoComplete: "given-name" })),
+            erreur && React.createElement("p", { className: "text-sm text-soleil" }, erreur),
+            React.createElement(Bouton, { enCours: enCours === 'oui', disabled: !!enCours, onClick: () => repondre('oui'), className: "h-16 rounded-2xl bg-fuchsia text-nuit font-display font-extrabold text-xl shadow-[0_10px_30px_-10px_var(--fuchsia)]" }, "Je viens\u00A0!"),
+            React.createElement(Bouton, { enCours: enCours === 'non', disabled: !!enCours, onClick: () => repondre('non'), className: "h-12 rounded-2xl border-[1.5px] border-trait text-brume font-semibold" }, "Je ne peux pas")))),
+        React.createElement("section", { className: "flex flex-col gap-3" },
+            React.createElement("div", { className: "flex items-baseline justify-between" },
+                React.createElement("h2", { className: "font-display font-extrabold text-xl" }, "Ils viennent"),
+                React.createElement("span", { className: "text-sm text-menthe font-semibold tnum" },
+                    viennent.length,
+                    " confirm\u00E9",
+                    viennent.length > 1 ? 's' : '')),
+            reponses.length === 0 ? (React.createElement("p", { className: "bg-velours rounded-2xl px-4 py-5 text-brume text-center" }, "Personne n'a encore r\u00E9pondu. Sois le premier\u00A0!")) : (React.createElement(React.Fragment, null,
+                viennent.length > 0 && React.createElement("div", { className: "flex -space-x-2" },
+                    viennent.slice(0, 8).map(r => React.createElement(Avatar, { key: r.id, nom: r.prenom })),
+                    viennent.length > 8 && React.createElement("div", { className: "w-10 h-10 rounded-full bg-carte ring-2 ring-nuit flex items-center justify-center text-xs font-bold tnum" },
+                        "+",
+                        viennent.length - 8)),
+                React.createElement("ul", { className: "flex flex-col divide-y divide-trait bg-velours rounded-2xl" },
+                    viennent.map(r => (React.createElement("li", { key: r.id, className: "flex items-center gap-3 px-4 py-3" },
+                        React.createElement(Avatar, { nom: r.prenom, taille: "w-8 h-8 text-xs", anneau: false }),
+                        React.createElement("span", { className: "flex-1 font-medium min-w-0 truncate" },
+                            r.prenom,
+                            moi && moi.reponse_id === r.id ? ' (toi)' : ''),
+                        React.createElement("span", { className: "text-xs font-bold text-menthe bg-menthe/10 px-2.5 py-1 rounded-full" }, "Vient")))),
+                    absents.map(r => (React.createElement("li", { key: r.id, className: "flex items-center gap-3 px-4 py-3 opacity-60" },
+                        React.createElement(Avatar, { nom: r.prenom, gris: true, taille: "w-8 h-8 text-xs", anneau: false }),
+                        React.createElement("span", { className: "flex-1 font-medium min-w-0 truncate" }, r.prenom),
+                        React.createElement("span", { className: "text-xs font-bold text-brume bg-carte px-2.5 py-1 rounded-full" }, "Absent\u00B7e"))))))))));
+}
+/* ================= Écran Logistique ================= */
+function EcranLogistique({ slug, etat, recharger, aller, toast }) {
+    const { articles, reponses } = etat;
+    const moi = stock.lire('moi_' + slug);
+    const [ajout, setAjout] = useState({ cat: 'autre', label: '' });
+    const [enCours, setEnCours] = useState(null);
+    if (!moi || moi.statut !== 'oui') {
+        return (React.createElement("div", { className: "flex flex-col gap-4 items-center text-center pt-16 pb-6" },
+            React.createElement("span", { className: "text-5xl", "aria-hidden": "true" }, "\uD83E\uDDFA"),
+            React.createElement("h1", { className: "font-display font-extrabold text-2xl" }, "R\u00E9serv\u00E9 aux invit\u00E9s qui viennent"),
+            React.createElement("p", { className: "text-brume max-w-xs" }, "R\u00E9ponds \u00AB Je viens \u00BB sur l'invitation pour choisir ce que tu apportes."),
+            React.createElement("button", { onClick: () => aller(`#/f/${slug}`), className: "mt-2 h-12 px-6 rounded-2xl bg-fuchsia text-nuit font-bold" }, "Voir l'invitation")));
+    }
+    const nomDe = (id) => { const r = reponses.find(x => x.id === id); return r ? r.prenom : 'Quelqu’un'; };
+    const pris = articles.filter(a => a.reponse_id).length;
+    const pct = articles.length ? Math.round(pris / articles.length * 100) : 0;
+    const mes = articles.filter(a => a.reponse_id === moi.reponse_id);
+    const basculer = async (a) => {
+        setEnCours(a.id);
+        const { error } = await db.rpc('basculer_article', { p_article: a.id, p_jeton: moi.jeton });
+        await recharger();
+        setEnCours(null);
+        if (error)
+            toast("Ça n'est pas passé, réessaie");
+    };
+    const ajouter = async (e) => {
+        e.preventDefault();
+        if (!ajout.label.trim())
+            return;
+        setEnCours('ajout');
+        const { error } = await db.rpc('ajouter_article', { p_slug: slug, p_categorie: ajout.cat, p_libelle: ajout.label.trim(), p_jeton: moi.jeton });
+        await recharger();
+        setEnCours(null);
+        if (error)
+            toast("L'ajout n'est pas passé, réessaie");
+        else
+            setAjout({ ...ajout, label: '' });
+    };
+    return (React.createElement("div", { className: "flex flex-col gap-6 pb-6 pt-4" },
+        React.createElement("header", { className: "flex flex-col gap-1" },
+            React.createElement("span", { className: "eyebrow text-soleil" }, "Logistique"),
+            React.createElement("h1", { className: "font-display font-extrabold text-[30px] leading-[1.05]" }, "Qui apporte quoi\u00A0?"),
+            React.createElement("p", { className: "text-brume text-[15px]" }, "Coche ce que tu ram\u00E8nes. Les autres invit\u00E9s le voient.")),
+        React.createElement("div", { className: "bg-velours rounded-2xl p-4 flex flex-col gap-2.5" },
+            React.createElement("div", { className: "flex justify-between text-sm" },
+                React.createElement("span", { className: "font-semibold" }, "Liste couverte"),
+                React.createElement("span", { className: "tnum text-brume" },
+                    React.createElement("b", { className: "text-lait" }, pris),
+                    " sur ",
+                    articles.length)),
+            React.createElement("div", { className: "h-2.5 rounded-full bg-carte overflow-hidden" },
+                React.createElement("div", { className: "h-full rounded-full transition-all duration-500", style: { width: pct + '%', background: 'linear-gradient(90deg, var(--fuchsia), var(--soleil))' } })),
+            React.createElement("p", { className: "text-sm text-brume" }, mes.length ? React.createElement(React.Fragment, null,
+                "Tu apportes : ",
+                React.createElement("span", { className: "text-lait font-medium" }, mes.map(a => a.libelle).join(', '))) : "Tu n'as encore rien choisi.")),
+        CATEGORIES.map(cat => {
+            const liste = articles.filter(a => a.categorie === cat.id);
+            if (!liste.length)
+                return null;
+            return (React.createElement("section", { key: cat.id, className: "flex flex-col gap-2" },
+                React.createElement("h2", { className: "flex items-center gap-2 font-display font-extrabold text-lg" },
+                    React.createElement("span", { "aria-hidden": "true" }, cat.icone),
+                    cat.nom,
+                    React.createElement("span", { className: "ml-auto text-xs font-body font-semibold text-brume tnum" },
+                        liste.filter(a => a.reponse_id).length,
+                        "/",
+                        liste.length)),
+                React.createElement("ul", { className: "flex flex-col gap-2" }, liste.map(a => {
+                    const amoi = a.reponse_id === moi.reponse_id, autre = a.reponse_id && !amoi;
+                    return (React.createElement("li", { key: a.id },
+                        React.createElement("button", { type: "button", onClick: () => basculer(a), disabled: autre || enCours === a.id, "aria-pressed": amoi, className: `w-full flex items-center gap-3 px-4 py-3.5 rounded-2xl text-left transition border-[1.5px] active:scale-[.99] ${amoi ? 'bg-menthe/10 border-menthe' : 'bg-velours border-transparent'} ${autre ? 'opacity-70' : ''}` },
+                            React.createElement("span", { className: `w-6 h-6 rounded-lg flex items-center justify-center shrink-0 border-2 font-bold text-sm ${amoi ? 'bg-menthe border-menthe text-nuit pop' : autre ? 'bg-carte border-trait text-brume' : 'border-trait'}` }, enCours === a.id ? React.createElement(Rond, null) : a.reponse_id ? '✓' : ''),
+                            React.createElement("span", { className: `flex-1 min-w-0 font-medium ${autre ? 'line-through decoration-brume/60' : ''}` }, a.libelle),
+                            a.reponse_id && React.createElement("span", { className: `text-xs font-semibold shrink-0 ${amoi ? 'text-menthe' : 'text-brume'}` }, amoi ? 'Toi' : nomDe(a.reponse_id)))));
+                }))));
+        }),
+        React.createElement("form", { onSubmit: ajouter, className: "bg-velours rounded-2xl p-4 flex flex-col gap-3" },
+            React.createElement("span", { className: "eyebrow text-brume" }, "Ajouter autre chose"),
+            React.createElement("div", { className: "flex gap-2 flex-wrap" }, CATEGORIES.map(c => React.createElement("button", { key: c.id, type: "button", onClick: () => setAjout({ ...ajout, cat: c.id }), className: `px-3 py-1.5 rounded-full text-sm font-semibold ${ajout.cat === c.id ? 'bg-lait text-nuit' : 'bg-carte text-brume'}` }, c.nom))),
+            React.createElement("div", { className: "flex gap-2" },
+                React.createElement("input", { id: "nouvel-article", className: "field flex-1 min-w-0", value: ajout.label, onChange: e => setAjout({ ...ajout, label: e.target.value }), placeholder: "Ex. Jeux de cartes", maxLength: 40 }),
+                React.createElement(Bouton, { type: "submit", enCours: enCours === 'ajout', disabled: !ajout.label.trim(), className: "px-4 rounded-2xl bg-soleil text-nuit font-bold shrink-0" }, "Ajouter")))));
+}
+/* ================= Écran Modifier ================= */
+function EcranModifier({ slug, etat, recharger, aller, toast }) {
+    const cle = stock.lire('orga_' + slug);
+    if (!cle)
+        return React.createElement(Message, { titre: "Acc\u00E8s r\u00E9serv\u00E9", texte: "Seul l'organisateur peut modifier cette f\u00EAte.", action: () => aller(`#/f/${slug}`), libelle: "Voir l'invitation" });
+    const f = etat.fete;
+    const enregistrer = async (n) => {
+        const { error } = await db.rpc('modifier_fete', { p_slug: slug, p_cle: cle, p_nom: n.nom, p_date: n.date_fete, p_heure: n.heure,
+            p_lieu: n.lieu, p_hote: n.hote, p_message: n.message, p_couverture: n.couverture, p_photo_url: n.photo_url });
+        if (error)
+            throw new Error("Les modifications n'ont pas été enregistrées. Réessaie.");
+        await recharger();
+        toast('Modifications enregistrées');
+        aller(`#/f/${slug}`);
+    };
+    return React.createElement(FormulaireFete, { titre: "Modifier ma f\u00EAte", sousTitre: "Organisateur", libelle: "Enregistrer", onValider: enregistrer, initial: { nom: f.nom, date_fete: f.date_fete, heure: (f.heure || '20:00').slice(0, 5), lieu: f.lieu, hote: f.hote || '', message: f.message || '', couverture: f.couverture, photo_url: f.photo_url } });
+}
+function Message({ titre, texte, action, libelle }) {
+    return (React.createElement("div", { className: "flex flex-col gap-4 items-center text-center pt-20 pb-6" },
+        React.createElement("h1", { className: "font-display font-extrabold text-2xl" }, titre),
+        React.createElement("p", { className: "text-brume max-w-xs" }, texte),
+        action && React.createElement("button", { onClick: action, className: "mt-2 h-12 px-6 rounded-2xl bg-fuchsia text-nuit font-bold" }, libelle)));
+}
+/* ================= Navigation ================= */
+function lireRoute() {
+    const h = location.hash.replace(/^#\/?/, '').split('/');
+    if (h[0] === 'f' && h[1])
+        return { slug: h[1], page: h[2] || 'invitation', cle: h[2] === 'orga' ? h[3] : null };
+    return { slug: null, page: 'creer' };
+}
+function EcranFete({ route, aller, toast }) {
+    const [etat, recharger] = useFete(route.slug);
+    if (etat.chargement)
+        return React.createElement("div", { className: "flex justify-center pt-24 text-brume" },
+            React.createElement(Rond, null));
+    if (etat.erreur === 'introuvable')
+        return React.createElement(Message, { titre: "F\u00EAte introuvable", texte: "Le lien est peut-\u00EAtre incomplet. Demande \u00E0 l'organisateur de te le renvoyer.", action: () => aller('#/'), libelle: "Cr\u00E9er ma f\u00EAte" });
+    if (!etat.fete)
+        return React.createElement(Message, { titre: "Pas de connexion", texte: "Impossible de charger la f\u00EAte. V\u00E9rifie ta connexion internet.", action: recharger, libelle: "R\u00E9essayer" });
+    const p = { slug: route.slug, etat, recharger, aller, toast };
+    if (route.page === 'logistique')
+        return React.createElement(EcranLogistique, { ...p });
+    if (route.page === 'modifier')
+        return React.createElement(EcranModifier, { ...p });
+    return React.createElement(EcranInvitation, { key: route.slug, ...p });
+}
+function App() {
+    const [route, setRoute] = useState(lireRoute);
+    const [msg, setMsg] = useState('');
+    const timer = useRef(null);
+    const toast = (t) => { setMsg(t); clearTimeout(timer.current); timer.current = setTimeout(() => setMsg(''), 2800); };
+    const aller = (h) => { if (location.hash === h)
+        setRoute(lireRoute());
+    else
+        location.hash = h; window.scrollTo(0, 0); };
+    useEffect(() => {
+        const onHash = () => setRoute(lireRoute());
+        window.addEventListener('hashchange', onHash);
+        document.getElementById('chargement').remove();
+        return () => window.removeEventListener('hashchange', onHash);
+    }, []);
+    /* Lien organisateur ouvert sur un autre téléphone : on vérifie puis on garde la clé */
+    useEffect(() => {
+        if (route.page !== 'orga' || !route.cle)
+            return;
+        db.rpc('est_organisateur', { p_slug: route.slug, p_cle: route.cle }).then(({ data }) => {
+            if (data) {
+                stock.ecrire('orga_' + route.slug, route.cle);
+                toast('Tu gères maintenant cette fête depuis ce téléphone');
+            }
+            history.replaceState(null, '', `#/f/${route.slug}`);
+            setRoute(lireRoute());
+        });
+    }, [route.page, route.cle]);
+    const derniere = route.slug || (stock.lire('derniere') || null);
+    useEffect(() => { if (route.slug)
+        stock.ecrire('derniere', route.slug); }, [route.slug]);
+    const onglets = [
+        { id: 'creer', nom: 'Créer', href: '#/', icone: React.createElement("path", { d: "M12 5v14M5 12h14" }) },
+        { id: 'invitation', nom: 'Invitation', href: derniere ? `#/f/${derniere}` : null, icone: React.createElement(React.Fragment, null,
+                React.createElement("rect", { x: "3", y: "6", width: "18", height: "13", rx: "2" }),
+                React.createElement("path", { d: "m3 8 9 6 9-6" })) },
+        { id: 'logistique', nom: 'Logistique', href: derniere ? `#/f/${derniere}/logistique` : null, icone: React.createElement(React.Fragment, null,
+                React.createElement("path", { d: "M9 11l3 3 8-8" }),
+                React.createElement("path", { d: "M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9" })) },
+    ];
+    const actif = route.page === 'creer' ? 'creer' : route.page === 'logistique' ? 'logistique' : 'invitation';
+    return (React.createElement("div", { className: "min-h-screen flex flex-col" },
+        React.createElement("div", { className: "gutter sticky top-0 z-20 bg-nuit" },
+            React.createElement("div", { className: "max-w-[440px] mx-auto flex items-center py-3" },
+                React.createElement("a", { href: "#/", className: "font-display font-extrabold text-xl tracking-tight" },
+                    "Viens",
+                    React.createElement("span", { className: "text-fuchsia" }, "Chez"),
+                    "Moi"))),
+        React.createElement("main", { className: "gutter flex-1", style: { paddingBottom: 'calc(96px + env(safe-area-inset-bottom, 0px))' } },
+            React.createElement("div", { className: "max-w-[440px] mx-auto" }, route.page === 'creer' ? React.createElement(EcranCreer, { aller: aller }) : React.createElement(EcranFete, { route: route, aller: aller, toast: toast }))),
+        React.createElement("nav", { className: "tab-bar gutter fixed bottom-0 inset-x-0 z-30 bg-velours border-t border-trait pt-2" },
+            React.createElement("div", { className: "max-w-[440px] mx-auto grid grid-cols-3 gap-2" }, onglets.map(o => (React.createElement("button", { key: o.id, disabled: !o.href, onClick: () => aller(o.href), "aria-current": actif === o.id ? 'page' : undefined, className: `flex flex-col items-center gap-1 py-1.5 rounded-xl disabled:opacity-30 ${actif === o.id ? 'text-fuchsia' : 'text-brume'}` },
+                React.createElement("svg", { viewBox: "0 0 24 24", width: "24", height: "24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": "true" }, o.icone),
+                React.createElement("span", { className: "text-xs font-semibold" }, o.nom)))))),
+        React.createElement(Toast, { texte: msg })));
+}
+ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App, null));
+
+</script>
+</body>
+</html>
