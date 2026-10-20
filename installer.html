@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Installer ViensChezMoi</title>
+<meta name="description" content="Organise ta soirée en un lien. Installe l'appli gratuitement.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Installe ViensChezMoi 🎉">
+<meta property="og:description" content="Organise ta soirée en un lien. Gratuit, sans compte.">
+<meta property="og:url" content="https://vienchezmoi.github.io/VienChezMoi-/installer.html">
+<meta property="og:image" content="https://vienchezmoi.github.io/VienChezMoi-/apercu.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#160f1f">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icone-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="ViensChezMoi">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=DM+Sans:wght@400;600;700&display=swap">
+<style>
+  :root { color-scheme: dark; --nuit:#160f1f; --velours:#221830; --carte:#2d2140; --lait:#f7f0fa; --brume:#b4a5c4; --fuchsia:#ff4f9a; --soleil:#ffc94d; --menthe:#5fe3b4; }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  html, body { margin: 0; min-height: 100%; }
+  body { background: var(--nuit); color: var(--lait); font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+         -webkit-tap-highlight-color: transparent; display: flex; justify-content: center;
+         padding: calc(32px + env(safe-area-inset-top, 0px)) max(20px, env(safe-area-inset-right, 0px)) calc(32px + env(safe-area-inset-bottom, 0px)) max(20px, env(safe-area-inset-left, 0px)); }
+  main { width: 100%; max-width: 400px; display: flex; flex-direction: column; align-items: center; gap: 22px; text-align: center; }
+  .icone { width: 128px; height: 128px; border-radius: 30px; box-shadow: 0 18px 50px -12px rgba(255,79,154,.55); }
+  h1 { font-family: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif; font-weight: 800; font-size: 34px; line-height: 1.05; margin: 0; text-wrap: balance; }
+  h1 b { color: var(--fuchsia); }
+  .sous { color: var(--brume); font-size: 17px; margin: -8px 0 0; line-height: 1.45; }
+  .points { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; width: 100%; text-align: left; }
+  .points li { background: var(--velours); border-radius: 14px; padding: 12px 14px; font-size: 15px; display: flex; gap: 10px; align-items: center; }
+  .points li span { font-size: 20px; }
+  .btn { width: 100%; height: 60px; border: 0; border-radius: 18px; font: 800 20px "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+         background: var(--fuchsia); color: var(--nuit); cursor: pointer; display: flex; align-items: center; justify-content: center; text-decoration: none;
+         box-shadow: 0 12px 30px -12px var(--fuchsia); transition: transform .1s; }
+  .btn:active { transform: scale(.98); }
+  .btn.second { background: var(--lait); box-shadow: none; font-size: 18px; height: 54px; }
+  .lien { color: var(--brume); font-weight: 600; font-size: 15px; text-decoration: underline; text-underline-offset: 4px; background: none; border: 0; cursor: pointer; padding: 6px; }
+  .etapes { background: var(--velours); border-radius: 18px; padding: 18px; width: 100%; text-align: left; display: flex; flex-direction: column; gap: 14px; }
+  .etapes h2 { margin: 0; font-size: 17px; }
+  .etapes ol { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.4; }
+  .ok { color: var(--menthe); font-weight: 700; font-size: 18px; }
+  .pictos { display: inline-block; background: var(--carte); border-radius: 8px; padding: 1px 8px; font-weight: 700; }
+  :focus-visible { outline: 2px solid var(--soleil); outline-offset: 3px; }
+</style>
+</head>
+<body>
+<main>
+  <img class="icone" src="icone-512.png" alt="" width="128" height="128">
+  <h1>Viens<b>Chez</b>Moi</h1>
+  <p class="sous">Organise ta soirée en un lien. Tes invités répondent en un clic et disent ce qu'ils apportent.</p>
+  <ul class="points">
+    <li><span aria-hidden="true">🎉</span> Gratuit, sans compte</li>
+    <li><span aria-hidden="true">📲</span> Invitation à partager sur WhatsApp, Snap, Insta…</li>
+    <li><span aria-hidden="true">🧊</span> Liste « qui apporte quoi » partagée</li>
+  </ul>
+
+  <!-- Android : l'invite d'installation de Chrome -->
+  <button id="installer" class="btn" hidden>Installer l'appli</button>
+  <!-- Navigateur intégré (Instagram, Facebook…) : ouvrir dans Chrome -->
+  <a id="chrome" class="btn" hidden>Ouvrir dans Chrome pour installer</a>
+  <!-- Déjà installée ou installation terminée -->
+  <p id="fini" class="ok" hidden>✓ L'appli est installée sur ton écran d'accueil.</p>
+
+  <section id="iphone" class="etapes" hidden>
+    <h2>Pour l'ajouter sur ton iPhone :</h2>
+    <ol>
+      <li id="iphone-integre" hidden>Appuie sur <span class="pictos">⋯</span> en haut à droite, puis <b>Ouvrir dans le navigateur</b> (ou <b>Ouvrir dans Safari</b>).</li>
+      <li id="iphone-safari">Vérifie que la page est ouverte dans <b>Safari</b>.</li>
+      <li>Appuie sur <span class="pictos">Partager</span> en bas de l'écran (le carré avec une flèche vers le haut).</li>
+      <li>Choisis <span class="pictos">Sur l'écran d'accueil</span>, puis <b>Ajouter</b>.</li>
+    </ol>
+  </section>
+  <section id="android" class="etapes" hidden>
+    <h2>Pour l'ajouter sur ton téléphone :</h2>
+    <ol>
+      <li>Appuie sur les <span class="pictos">⋮</span> en haut à droite de Chrome.</li>
+      <li>Choisis <b>Installer l'application</b> ou <b>Ajouter à l'écran d'accueil</b>.</li>
+    </ol>
+  </section>
+
+  <a id="ouvrir" class="btn second" href="./#/">Utiliser sans installer</a>
+</main>
+
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var ua = navigator.userAgent;
+  var iphone = /iphone|ipad|ipod/i.test(ua);
+  var android = /android/i.test(ua);
+  var integre = /FBAN|FBAV|FB_IAB|Instagram|Snapchat|Line\/|TikTok|musical_ly|BytedanceWebview/i.test(ua);
+  var installee = (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) || navigator.standalone === true;
+  var invite = null;
+
+  if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(function () {});
+
+  function montrer(id) { ['installer', 'chrome', 'fini', 'iphone', 'android'].forEach(function (x) { $(x).hidden = x !== id; }); }
+
+  if (installee) { location.replace('./#/'); return; }
+
+  if (iphone) {
+    montrer('iphone');
+    if (integre) { $('iphone-integre').hidden = false; $('iphone-safari').hidden = true; }
+  }
+  else if (android && integre) {
+    // Les navigateurs intégrés aux réseaux sociaux ne savent pas installer : on rouvre la page dans Chrome
+    $('chrome').href = 'intent://' + location.host + location.pathname + '#Intent;scheme=https;package=com.android.chrome;end';
+    montrer('chrome');
+  } else {
+    // En attendant que Chrome propose l'installation, on montre déjà le bouton
+    montrer('installer');
+  }
+
+  window.addEventListener('beforeinstallprompt', function (e) {
+    e.preventDefault(); invite = e;
+    if (!iphone) montrer('installer');
+  });
+  window.addEventListener('appinstalled', function () { invite = null; montrer('fini'); $('ouvrir').textContent = "Ouvrir l'appli"; });
+
+  $('installer').addEventListener('click', function () {
+    if (invite) {
+      invite.prompt();
+      invite.userChoice.then(function (r) { if (r.outcome === 'accepted') { montrer('fini'); $('ouvrir').textContent = "Ouvrir l'appli"; } invite = null; });
+    } else {
+      // Chrome n'a pas (encore) proposé l'installation : déjà installée, ou navigateur qui ne le permet pas
+      montrer('android');
+    }
+  });
+})();
+</script>
+</body>
+</html>
